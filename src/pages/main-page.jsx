@@ -2,6 +2,7 @@ import Header from "../components/header.jsx";
 import bubble1 from "../assets/bubble1.jpg";
 import bubble2 from "../assets/bubble2.jpg";
 import bubble3 from "../assets/bubble3.jpg";
+import Footer from "../components/footer.jsx";
 function MainPage() {
   return (
     <>
@@ -56,6 +57,7 @@ function MainPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
