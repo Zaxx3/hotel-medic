@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import pin from "../../public/pin.svg";
-import phone from "../../public/phone.svg";
-import email from "../../public/email.svg";
+import pin from "../assets/pin.svg";
+import phone from "../assets/phone.svg";
+import email from "../assets/email.svg";
 function Footer() {
   return (
     <footer>
@@ -39,6 +39,7 @@ function Footer() {
           </div>
           <div className="email">
             <img src={email} alt="email" />
+
             <p>info@hotel-medic.com</p>
           </div>
         </div>
