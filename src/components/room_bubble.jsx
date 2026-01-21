@@ -18,7 +18,7 @@ function roomBubble(props) {
           onClick={() => handleBubbleClick(item)}
           style={{ cursor: "pointer" }}
         >
-          <img src={item.image} alt="room" />
+          <img src={item.image[0]} alt="room" />
           <div className="short-desc">
             <p className="name">{item.name}</p>
             <p className="occupancy">

@@ -1,6 +1,12 @@
 import { useParams, useLocation, useNavigate } from "react-router-dom";
+
 import Header from "../components/header.jsx";
 import Footer from "../components/footer.jsx";
+import ImageCarousel from "../components/carousel.jsx";
+
+import occupancyIcon from "../assets/occupancy.svg";
+import coffeeIcon from "../assets/coffee.svg";
+import bedIcon from "../assets/bed.svg";
 
 import rooms from "../data/rooms";
 
@@ -21,37 +27,51 @@ function RoomDetail() {
   }
 
   return (
-    <div className="room-detail">
+    <>
       <Header />
+
       <div className="room-detail-content">
-        <div className="room-image">
-          <img src={room.image} alt={room.name} />
-        </div>
         <div className="room-info">
           <h1>{room.name}</h1>
-          <p className="occupancy">
-            <strong>Occupancy:</strong> {room.occupancy} people
-          </p>
-          <div className="beds">
-            <h3>Beds:</h3>
-            <ul>
-              {room.beds.map((bed, index) => (
-                <li key={index}>{bed}</li>
-              ))}
-            </ul>
+          <div className="room-image">
+            <ImageCarousel images={room.image} />
           </div>
-          <div className="commodities">
-            <h3>Amenities:</h3>
-            <ul>
-              {room.commodity.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <div className="holder">
+            <div className="room-details">
+              <p>Детайли</p>
+              <div className="ocupancy">
+                <img src={occupancyIcon} alt="" />
+                <p>Гости: </p>
+                <p> {room.occupancy}</p>
+              </div>
+              <div className="commodities">
+                <img src={coffeeIcon} alt="" />
+                <p>Удобства: </p>
+                <p>{room.commodity.join(", ")}</p>
+              </div>
+              <div className="beds">
+                <img src={bedIcon} alt="" />
+                <p>Легла: </p>
+                <p>{room.beds.join(", ")}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="booking">
+            <p>Резервирайте своят престой</p>
+            <a
+              href="https://www.booking.com/Share-ACdBjc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Тук
+            </a>
           </div>
         </div>
       </div>
+
       <Footer />
-    </div>
+    </>
   );
 }
 
