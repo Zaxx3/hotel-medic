@@ -44,6 +44,12 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="copyright">
+        Made by{" "}
+        <a href="https://www.linkedin.com/in/maxim-aliev-18436a1a9/">
+          @MaximAliev
+        </a>
+      </div>
     </footer>
   );
 }

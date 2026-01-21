@@ -7,6 +7,12 @@ $text: #e7dcc8;
 $detail: #2b2b2b;
 $hedaerBg: #f5f5f531;
 
+$bp-mobile: 600px;
+
+$bp-tablet: 1024px;
+
+$bp-desktop-lg: 1440px;
+
 html,
 body {
   margin: 0;
@@ -59,6 +65,7 @@ header {
 }
 
 footer {
+  position: relative;
   margin-top: 2%;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -84,6 +91,13 @@ footer {
     div {
       display: flex;
       margin-bottom: 0.05rem;
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    a {
+      color: rgb(110, 110, 110);
     }
   }
 }
@@ -116,6 +130,19 @@ footer {
       font-size: 1.25rem;
     }
   }
+}
+
+.hidden {
+  display: none;
+}
+.promotions {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4f2e43;
 }
 
 .short-desc-content {
@@ -324,6 +351,161 @@ footer {
         &:hover {
           background-color: #0056d2;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  header {
+    .name {
+      font-size: 1.5rem;
+    }
+    .navigation {
+      font-size: 1rem;
+      gap: 1.5rem;
+    }
+  }
+
+  .main-page-content {
+    background-size: cover;
+    .main-banner {
+      p {
+        padding: 0;
+      }
+    }
+  }
+  .short-desc-content {
+    row-gap: 5rem;
+    .bubble {
+      flex-direction: column;
+      .image {
+        img {
+          max-width: 500px;
+          max-height: 350px;
+        }
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+
+  .rooms-page-content {
+    .rooms-page-top-banner {
+      max-width: 500px;
+    }
+    .rooms-grid {
+      .room-bubble {
+        img {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+    div {
+      max-width: 500px;
+    }
+    .information {
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+  .room-detail-content {
+    .room-info {
+      .room-image {
+        .swiper {
+          img {
+            max-width: 530px;
+            height: 330px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .main-page-content {
+    .main-banner {
+      p {
+        padding: 0 4rem 0 4rem;
+      }
+    }
+  }
+  .short-desc-content {
+    .bubble {
+      column-gap: 0.75rem;
+    }
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    align-items: center;
+    .information {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  .room-detail-content {
+    .room-info {
+      .holder {
+        margin-left: 6%;
+        margin-right: 6%;
+      }
+    }
+  }
+}
+
+@media (min-width: $bp-desktop-lg) {
+  .main-page-content {
+    .main-banner {
+      p {
+        padding: 0 5rem 0 5rem;
+      }
+    }
+  }
+  .room-detail-content {
+    .room-info {
+      .holder {
+        margin-left: 18.75%;
+        margin-right: 18.75%;
       }
     }
   }

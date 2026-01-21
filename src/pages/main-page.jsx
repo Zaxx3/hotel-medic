@@ -19,6 +19,10 @@ function MainPage() {
           </p>
         </div>
       </div>
+      <div className="promotions ">
+        <p>Промоция:</p>
+        <p>До края на февруари, всички стаи са безплатни!!!</p>
+      </div>
       <div className="short-desc-content">
         <div className="bubble one">
           <div className="image">
