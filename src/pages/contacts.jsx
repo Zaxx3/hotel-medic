@@ -34,6 +34,8 @@ function Contacts() {
                   +359 2 952 11 22
                   <br></br>
                   +359 2 952 68 90
+                  <br></br>
+                  +359 8 843 34 593
                 </div>
               </div>
             </li>
@@ -46,7 +48,7 @@ function Contacts() {
           </ul>
         </div>
         <div className="form">
-          <h2>Имате въпроси?</h2>
+          <h2>Свържете се с нас!</h2>
           <ContactForm />
         </div>
       </div>

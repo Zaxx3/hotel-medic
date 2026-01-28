@@ -12,6 +12,7 @@ import tripleImg2 from "../assets/rooms/triple2.jpg";
 
 import doubleImg from "../assets/rooms/double.jpg";
 import doubleImg2 from "../assets/rooms/double2.jpg";
+import doubleImg3 from "../assets/rooms/double3.jpg";
 
 import maisonetteImg from "../assets/rooms/maisonette.jpg";
 
@@ -34,14 +35,6 @@ const rooms = [
   },
   {
     id: 3,
-    name: "Четворна стая",
-    occupancy: "4",
-    commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
-    beds: ["Четири единични легла"],
-    image: [quadrupleImg, quadrupleImg2],
-  },
-  {
-    id: 4,
     name: "Тройна стая",
     occupancy: "3",
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
@@ -49,15 +42,15 @@ const rooms = [
     image: [tripleImg, tripleImg2],
   },
   {
-    id: 5,
+    id: 4,
     name: "Двойна стая",
     occupancy: "2",
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Две единични легла или двойно легло"],
-    image: [doubleImg, doubleImg2],
+    image: [doubleImg, doubleImg2, doubleImg3],
   },
   {
-    id: 6,
+    id: 5,
     name: "Мезонет",
     occupancy: "4",
     commodity: ["wi-fi", "Телевизор"],

@@ -1,4 +1,5 @@
 import { useParams, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Header from "../components/header.jsx";
 import Footer from "../components/footer.jsx";
@@ -59,13 +60,7 @@ function RoomDetail() {
 
           <div className="booking">
             <p>Резервирайте своят престой</p>
-            <a
-              href="https://www.booking.com/Share-ACdBjc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Тук
-            </a>
+            <Link to="/contacts">Тук</Link>
           </div>
         </div>
       </div>
