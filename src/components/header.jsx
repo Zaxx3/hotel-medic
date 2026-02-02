@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <div className="name">Хотел Медик</div>
+      <Link className="name" to="/">
+        Хотел Медик
+      </Link>
       <div className="navigation">
         <Link to="/">Начало</Link>
         <Link to="/rooms">Стаи</Link>

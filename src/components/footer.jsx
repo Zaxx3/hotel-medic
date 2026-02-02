@@ -35,6 +35,8 @@ function Footer() {
               +359(2) 9521122
               <br></br>
               +359(2) 9526890
+              <br></br>
+              +359(8) 884334593
             </div>
           </div>
           <div className="email">

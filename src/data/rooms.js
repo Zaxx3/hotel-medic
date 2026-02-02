@@ -24,6 +24,8 @@ const rooms = [
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Двойно легло", "Разтегателен диван"],
     image: [apartmentImg],
+    priceSunToThu: 61,
+    priceFriAndSat: 57,
   },
   {
     id: 2,
@@ -32,6 +34,8 @@ const rooms = [
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Двойно легло"],
     image: [deluxeImg, deluxeImg2, deluxeImg3],
+    priceSunToThu: 51,
+    priceFriAndSat: 47,
   },
   {
     id: 3,
@@ -40,6 +44,8 @@ const rooms = [
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Три единични легла"],
     image: [tripleImg, tripleImg2],
+    priceSunToThu: 50,
+    priceFriAndSat: 45,
   },
   {
     id: 4,
@@ -48,6 +54,8 @@ const rooms = [
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Две единични легла или двойно легло"],
     image: [doubleImg, doubleImg2, doubleImg3],
+    priceSunToThu: 44,
+    priceFriAndSat: 40,
   },
   {
     id: 5,
@@ -56,6 +64,8 @@ const rooms = [
     commodity: ["wi-fi", "Телевизор"],
     beds: ["Двойно легло", "Разтегателен диван"],
     image: [maisonetteImg],
+    priceSunToThu: 59,
+    priceFriAndSat: 53,
   },
 ];
 

@@ -39,22 +39,41 @@ function RoomDetail() {
           </div>
           <div className="holder">
             <div className="room-details">
-              <p>Детайли</p>
+              <p className="heading">Детайли</p>
               <div className="ocupancy">
                 <img src={occupancyIcon} alt="" />
-                <p>Гости: </p>
+                <p>
+                  <b>Гости: </b>
+                </p>
                 <p> {room.occupancy}</p>
               </div>
               <div className="commodities">
                 <img src={coffeeIcon} alt="" />
-                <p>Удобства: </p>
+                <p>
+                  <b>Удобства: </b>
+                </p>
                 <p>{room.commodity.join(", ")}</p>
               </div>
               <div className="beds">
                 <img src={bedIcon} alt="" />
-                <p>Легла: </p>
+                <p>
+                  <b>Легла:</b>{" "}
+                </p>
                 <p>{room.beds.join(", ")}</p>
               </div>
+            </div>
+            <div className="price">
+              <p className="heading">Цени</p>
+              <p>
+                <b> Сряда до неделя:</b> {room.priceSunToThu}€
+              </p>
+              <p>
+                <b>Петък и събота: </b>
+                {room.priceFriAndSat}€
+              </p>
+              <p>
+                <b>Дом. любимец: +7€</b>
+              </p>
             </div>
           </div>
 
