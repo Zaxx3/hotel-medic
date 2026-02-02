@@ -288,7 +288,8 @@ footer {
     text-align: center;
     margin-bottom: 5%;
     p {
-      margin: 0 33rem;
+      max-width: 60ch;
+      margin: auto;
     }
   }
   .restaurant-info {
@@ -394,18 +395,118 @@ footer {
   }
 }
 
-@media (max-width: $bp-mobile) {
+@media (max-width: 1440px) {
+  .restaurant {
+  }
+  .main-page-content {
+    .main-banner {
+      p {
+        padding: 0 5rem 0 5rem;
+      }
+    }
+  }
+  .room-detail-content {
+    .room-info {
+      .room-image {
+        .swiper {
+          img {
+            max-width: 85%;
+            height: 600px;
+          }
+        }
+      }
+      .holder {
+        margin-left: 18.75%;
+        margin-right: 18.75%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
   h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
   }
   p {
-    font-size: 1rem !important;
+    font-size: 1rem;
+  }
+
+  footer {
+    div {
+      max-width: 200px;
+    }
+  }
+
+  .main-page-content {
+    .main-banner {
+      p {
+        padding: 0 4rem 0 4rem;
+      }
+    }
+  }
+  .short-desc-content {
+    .bubble {
+      flex-direction: column;
+      column-gap: 0.75rem;
+    }
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    align-items: center;
+    .information {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  .room-detail-content {
+    .room-info {
+      .room-image {
+        .swiper {
+          img {
+            max-width: 88%;
+            height: 400px;
+          }
+        }
+      }
+      .holder {
+        margin-left: 6%;
+        margin-right: 6%;
+      }
+    }
+  }
+  .restaurant {
+    .restaurant-info {
+      .restaurant-images {
+        img {
+          max-width: 90%;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
   }
   header {
     .name {
@@ -449,7 +550,7 @@ footer {
     .rooms-grid {
       .room-bubble {
         img {
-          max-width: 500px;
+          max-width: 100%;
         }
       }
     }
@@ -477,76 +578,108 @@ footer {
       .room-image {
         .swiper {
           img {
-            max-width: 530px;
+            max-width: 88%;
             height: 330px;
           }
         }
       }
     }
   }
+  .restaurant {
+    .restaurant-info {
+      .restaurant-images {
+        img {
+          max-width: 80%;
+          height: 200px;
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: $bp-tablet) {
-  h1 {
-    font-size: 3rem !important;
+@media (max-width: 400px) {
+  header {
+    padding: 0 10px;
+    .name {
+      font-size: 1.25rem;
+    }
+    .navigation {
+      font-size: 0.875rem;
+      row-gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
   }
-  h2 {
-    font-size: 2rem !important;
+  footer {
+    padding-left: 1.7rem;
   }
-  h3 {
-    font-size: 1.25rem !important;
-  }
-  p {
-    font-size: 1rem !important;
-  }
-
   .main-page-content {
     .main-banner {
+      h1 {
+        font-size: 2.5rem;
+      }
       p {
-        padding: 0 4rem 0 4rem;
+        font-size: 1rem;
       }
     }
   }
   .short-desc-content {
     .bubble {
-      column-gap: 0.75rem;
+      .image {
+        img {
+          max-width: 330px;
+        }
+      }
     }
   }
 
+  .rooms-page-content {
+    .rooms-grid {
+      .room-bubble {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+
+  .restaurant {
+    .restaurant-container {
+      p {
+        margin: 0;
+      }
+    }
+    .restaurant-info {
+      .restaurant-images {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .room-detail-content {
+    .room-info {
+      .room-image {
+        .swiper {
+          img {
+            max-width: 88%;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
   .contacts-container {
-    flex-direction: column;
-    align-items: center;
     .information {
-      h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about-us {
         text-align: center;
       }
-    }
-  }
-  .room-detail-content {
-    .room-info {
-      .holder {
-        margin-left: 6%;
-        margin-right: 6%;
-      }
-    }
-  }
-}
-
-@media (max-width: $bp-desktop-lg) {
-  .main-page-content {
-    .main-banner {
-      p {
-        padding: 0 5rem 0 5rem;
-      }
-    }
-  }
-  .room-detail-content {
-    .room-info {
-      .holder {
-        margin-left: 18.75%;
-        margin-right: 18.75%;
-        flex-direction: column;
-        align-items: flex-start;
+      img {
+        max-width: 320px;
       }
     }
   }
