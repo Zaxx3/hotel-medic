@@ -4,6 +4,8 @@ import food1 from "../assets/food1.jpg";
 import food2 from "../assets/food2.jpg";
 import food3 from "../assets/food3.jpg";
 import food4 from "../assets/food4.jpg";
+import restaurant1 from "../assets/res1.jpg";
+import restaurant2 from "../assets/res2.jpg";
 function Restaurant() {
   return (
     <>
@@ -20,6 +22,10 @@ function Restaurant() {
           </p>
         </div>
         <div className="restaurant-info">
+          <div className="restaurant-interior">
+            <img src={restaurant1} alt="" />
+            <img src={restaurant2} alt="" />
+          </div>
           <div className="menu">
             <h2>Меню</h2>
           </div>
