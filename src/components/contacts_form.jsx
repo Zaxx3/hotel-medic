@@ -6,14 +6,14 @@ function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_36n6cdb",
+        "service_3pu54vk",
         "template_fn9jdn6",
         e.target,
-        "bsM4u74Gj9OMMRn_j"
+        "bsM4u74Gj9OMMRn_j",
       )
       .then(
         () => alert("Message sent!"),
-        (error) => alert("Failed: " + error.text)
+        (error) => alert("Failed: " + error.text),
       );
 
     e.target.reset();

@@ -42,7 +42,7 @@ function Contacts() {
             <li className="email">
               <div className="email-wrapper">
                 <img src={email} alt="Email" />
-                <p>info@hotelmedic.bg</p>
+                <p>info@hotel-medic.bg</p>
               </div>
             </li>
           </ul>

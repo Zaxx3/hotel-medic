@@ -65,7 +65,7 @@ function RoomDetail() {
             <div className="price">
               <p className="heading">Цени</p>
               <p>
-                <b> Сряда до неделя:</b> {room.priceSunToThu}€
+                <b> Неделя до четвъртък:</b> {room.priceSunToThu}€
               </p>
               <p>
                 <b>Петък и събота: </b>
@@ -73,6 +73,9 @@ function RoomDetail() {
               </p>
               <p>
                 <b>Дом. любимец: +7€</b>
+              </p>
+              <p>
+                <b>Паркинг: +7€</b>
               </p>
             </div>
           </div>
