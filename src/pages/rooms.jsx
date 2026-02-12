@@ -8,7 +8,7 @@ function Rooms() {
       <Header />
       <div className="rooms-page-content">
         <div className="rooms-page-top-banner">
-          <h1>Нашите стаи</h1>
+          <h1>Хотелска част</h1>
           <p>
             Нашите стаи съчетават комфорт, стил и спокойствие, за да ви осигурят
             пълноценна почивка. Насладете се на уютна атмосфера и всички

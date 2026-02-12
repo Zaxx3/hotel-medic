@@ -4,8 +4,15 @@ import food1 from "../assets/food1.jpg";
 import food2 from "../assets/food2.jpg";
 import food3 from "../assets/food3.jpg";
 import food4 from "../assets/food4.jpg";
-import restaurant1 from "../assets/res1.jpg";
-import restaurant2 from "../assets/res2.jpg";
+const images = Object.values(
+  import.meta.glob("../assets/res/*.jpg", {
+    eager: true,
+    import: "default",
+  }),
+);
+
+import RestaurantCarousel from "../components/resaturant_carousel";
+
 function Restaurant() {
   return (
     <>
@@ -16,15 +23,15 @@ function Restaurant() {
           <p>
             Ресторантът на хотел „Медик“ предлага приятна и спокойна обстановка,
             подходяща за пълноценна закуска, обяд или вечеря. Това е място за
-            отдих и неангажиращо хранене в уютна атмосфера Менюто включва
-            разнообразни ястия, приготвени с внимание към вкуса и комфорта на
-            гостите. Предлагаме обедно меню от понеделник до петък.
+            отдих и неангажиращо хранене в уютна атмосфера.Менюто включва
+            разнообразни месни и безмесни ястия,салати,супи и десерти приготвени
+            с внимание към вкуса и предпочитанията на своите клиенти.Предлагаме
+            обедно меню от понеделник до петък.
           </p>
         </div>
         <div className="restaurant-info">
           <div className="restaurant-interior">
-            <img src={restaurant1} alt="" />
-            <img src={restaurant2} alt="" />
+            <RestaurantCarousel images={images} />
           </div>
           <div className="menu">
             <h2>Меню</h2>

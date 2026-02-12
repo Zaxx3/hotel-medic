@@ -1,4 +1,8 @@
 import apartmentImg from "../assets/rooms/apartment.jpg";
+import apartmentImg2 from "../assets/rooms/apartment2.jpg";
+import apartmentImg3 from "../assets/rooms/apartment3.jpg";
+import apartmentImg4 from "../assets/rooms/apartment4.jpg";
+import apartmentImg5 from "../assets/rooms/apartment5.jpg";
 
 import deluxeImg from "../assets/rooms/deluxe.jpg";
 import deluxeImg2 from "../assets/rooms/deluxe2.jpg";
@@ -15,6 +19,8 @@ import doubleImg2 from "../assets/rooms/double2.jpg";
 import doubleImg3 from "../assets/rooms/double3.jpg";
 
 import maisonetteImg from "../assets/rooms/maisonette.jpg";
+import maisonetteImg2 from "../assets/rooms/maisonette2.jpg";
+import maisonetteImg3 from "../assets/rooms/maisonette3.jpg";
 
 const rooms = [
   {
@@ -23,7 +29,13 @@ const rooms = [
     occupancy: "4",
     commodity: ["wi-fi", "Климатик (опционално)", "Телевизор"],
     beds: ["Двойно легло", "Разтегателен диван"],
-    image: [apartmentImg],
+    image: [
+      apartmentImg,
+      apartmentImg2,
+      apartmentImg3,
+      apartmentImg4,
+      apartmentImg5,
+    ],
     priceSunToThu: 61,
     priceFriAndSat: 57,
   },
@@ -63,7 +75,7 @@ const rooms = [
     occupancy: "4",
     commodity: ["wi-fi", "Телевизор"],
     beds: ["Двойно легло", "Разтегателен диван"],
-    image: [maisonetteImg],
+    image: [maisonetteImg, maisonetteImg2, maisonetteImg3],
     priceSunToThu: 59,
     priceFriAndSat: 53,
   },
