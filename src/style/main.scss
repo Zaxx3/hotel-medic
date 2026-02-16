@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 $primary: #2e4f3a;
 $secondary: #b49d74;
@@ -26,17 +27,18 @@ $bp-desktop-lg: 1440px;
   }
 }
 .page-animate {
-  animation: riseUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.05s forwards;
+  animation: riseUp 3s cubic-bezier(0.22, 1, 0.36, 1) 0.05s forwards;
 }
 
 html,
 body {
   margin: 0;
-  background: #1384ed;
+
+  background: #4a76d4;
   background: linear-gradient(
     180deg,
-    rgba(19, 132, 237, 1) 0%,
-    rgba(180, 157, 116, 1) 100%
+    rgba(74, 118, 212, 1) 0%,
+    rgba(212, 168, 74, 1) 100%
   );
   min-height: 100vh;
 }
@@ -67,20 +69,21 @@ a {
 }
 
 header {
+  font-family: "Lora";
   background-color: #00000000;
   height: 4rem;
-
+  border-bottom: solid 2px #2d5bbe;
   position: sticky;
   display: flex;
   justify-content: space-around;
   align-items: center;
   .name {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   .navigation {
     display: flex;
     gap: 3rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -350,9 +353,9 @@ footer {
     .restaurant-images {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 10rem;
-      column-gap: 3rem;
+      justify-content: space-around;
+      flex: 1 0 40%;
+
       row-gap: 3rem;
       img {
         max-width: 500px;
@@ -547,6 +550,9 @@ footer {
   }
   .restaurant {
     .restaurant-info {
+      .restaurant-interior {
+        max-width: 600px;
+      }
       .restaurant-images {
         img {
           max-width: 90%;
@@ -649,11 +655,15 @@ footer {
   }
   .restaurant {
     .restaurant-info {
+      .restaurant-interior {
+        max-width: 300px;
+      }
       .restaurant-images {
         margin: 0;
+        row-gap: 2rem;
         img {
-          // max-width: 80%;
-          // height: 200px;
+          max-width: 80%;
+          height: 260px;
         }
       }
     }

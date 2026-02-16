@@ -14,6 +14,11 @@ export default function ImageCarousel({ images }) {
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000 }}
       loop
+      breakpoints={{
+        600: {
+          Navigation,
+        },
+      }}
     >
       {images.map((src, index) => (
         <SwiperSlide key={index}>

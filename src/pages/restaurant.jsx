@@ -1,11 +1,15 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
-import food1 from "../assets/food1.jpg";
-import food2 from "../assets/food2.jpg";
-import food3 from "../assets/food3.jpg";
-import food4 from "../assets/food4.jpg";
+
 const images = Object.values(
   import.meta.glob("../assets/res/*.jpg", {
+    eager: true,
+    import: "default",
+  }),
+);
+
+const foodImages = Object.values(
+  import.meta.glob("../assets/food/*.webp", {
     eager: true,
     import: "default",
   }),
@@ -37,10 +41,9 @@ function Restaurant() {
             <h2>Меню</h2>
           </div>
           <div className="restaurant-images">
-            <img src={food1} alt="" />
-            <img src={food2} alt="" />
-            <img src={food3} alt="" />
-            <img src={food4} alt="" />
+            {foodImages.map((image, index) => (
+              <img key={index} src={image} alt={`Food ${index + 1}`} />
+            ))}
           </div>
         </div>
       </div>
