@@ -62,22 +62,6 @@ function RoomDetail() {
                 <p>{room.beds.join(", ")}</p>
               </div>
             </div>
-            <div className="price">
-              <p className="heading">Цени</p>
-              <p>
-                <b> Неделя до четвъртък:</b> {room.priceSunToThu}€
-              </p>
-              <p>
-                <b>Петък и събота: </b>
-                {room.priceFriAndSat}€
-              </p>
-              <p>
-                <b>Дом. любимец: +7€</b>
-              </p>
-              <p>
-                <b>Паркинг: +7€</b>
-              </p>
-            </div>
           </div>
 
           <div className="booking">

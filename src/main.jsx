@@ -10,6 +10,7 @@ import Contacts from "./pages/contacts";
 import Rooms from "./pages/rooms";
 import RoomDetail from "./pages/room-detail";
 import Restaurant from "./pages/restaurant";
+import Prices from "./pages/prices";
 import NotFound from "./pages/not-found";
 
 createRoot(document.getElementById("root")).render(
@@ -53,6 +54,14 @@ createRoot(document.getElementById("root")).render(
           element={
             <PageWrapper>
               <Restaurant />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/prices"
+          element={
+            <PageWrapper>
+              <Prices />
             </PageWrapper>
           }
         />

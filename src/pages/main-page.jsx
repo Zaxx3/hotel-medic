@@ -3,6 +3,8 @@ import bubble1 from "../assets/bubble1.jpg";
 import bubble2 from "../assets/bubble2.jpg";
 import bubble3 from "../assets/bubble3.jpg";
 import newPart from "../assets/new_part.jpg";
+import newPart2 from "../assets/new-part2.jpg";
+import entrance from "../assets/entrance.jpg";
 import Footer from "../components/footer.jsx";
 function MainPage() {
   return (
@@ -45,6 +47,14 @@ function MainPage() {
           </div>
         </div>
         <div className="bubble three">
+          <div className="image">
+            <img src={entrance} alt="стая" />
+          </div>
+          <div className="image">
+            <img src={newPart2} alt="стая" />
+          </div>
+        </div>
+        <div className="bubble four">
           <div className="image">
             <img src={bubble3} alt="карта" />
           </div>

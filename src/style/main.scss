@@ -52,7 +52,7 @@ h4,
 h5,
 h6,
 span {
-  font-family: "Ubuntu";
+  font-family: "Lora";
   color: $text;
 }
 
@@ -145,6 +145,7 @@ footer {
 
     h1 {
       margin: 0;
+      font-family: "Ubuntu";
       font-size: 4rem;
       padding: 4px;
       background-color: #000000bf;
@@ -263,15 +264,38 @@ footer {
   }
 }
 
+.prices-page-section {
+  .prices-page {
+    text-align: center;
+    .wrapper {
+      overflow-x: auto;
+    }
+    table {
+      margin: 0 auto;
+      width: 3rem;
+    }
+  }
+}
+
 .rooms-page-content {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .rooms-page-top-banner {
     text-align: center;
     max-width: 650px;
     margin: 0 auto;
+    a {
+      color: $text;
+      font-weight: 600;
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $secondary;
+      }
+    }
   }
   .rooms-grid {
     margin-top: 5%;
@@ -593,6 +617,7 @@ footer {
       }
     }
   }
+
   .short-desc-content {
     row-gap: 5rem;
     .bubble {
