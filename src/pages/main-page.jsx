@@ -12,12 +12,12 @@ function MainPage() {
       <Header />
       <div className="main-page-content">
         <div className="main-banner">
-          <h1>Добре дошли при нас</h1>
+          <h1>Добре дошли</h1>
         </div>
       </div>
-      <div className="promotions hidden">
-        <p>Промоция:</p>
-        <p>До края на февруари, всички стаи са безплатни!!!</p>
+      <div className="promotions">
+        <p>Промоция за месец Март:</p>
+        <p>Паркинга е включен в цената на нощувката</p>
       </div>
       <div className="short-desc-content">
         <div className="bubble one">
