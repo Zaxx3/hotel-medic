@@ -16,7 +16,7 @@ function MainPage() {
         </div>
       </div>
       <div className="promotions">
-        <p>Промоция за месец Март:</p>
+        <p>Промоция за месец Октомври:</p>
         <p>Паркинга е включен в цената на нощувката</p>
       </div>
       <div className="short-desc-content">
